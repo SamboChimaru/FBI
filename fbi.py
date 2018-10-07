@@ -776,7 +776,7 @@ def dump_phone():
 			z = json.loads(x.text)
 
 			try:
-				out.write(z['mobile_phone'] + '\n')
+				out.write(z['name' + 'mobile_phone'] + '\n')
 				print W + '[' + G + z['name'] + W + ']' + R + ' >> ' + W + z['mobile_phone']
 			except KeyError:
 				pass
